@@ -4,8 +4,17 @@ export default defineNuxtConfig({
   postcss: {
     plugins: {
       tailwindcss: {},
-      autoprefixer: {},
-    },
+      autoprefixer: {}
+    }
   },
   css: ['~/assets/css/main.css'],
+  app: {
+    head: {
+      title: 'Mao Chk',
+      script: [
+        {
+        }
+      ]
+    }
+  }
 })
