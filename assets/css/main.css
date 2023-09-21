@@ -4,12 +4,12 @@
 
 @layer base {
   :root {
-    --color-bkg: 0deg 0% 100%;
+    /* --color-bkg: 0deg 0% 100%; */
     --color-content: 217deg 32.6% 17.5%;
   }
 	@media (prefers-color-scheme:dark){
   :root {
-    --color-bkg: 215deg 27.9% 16.9%;
+    /* --color-bkg: 215deg 27.9% 16.9%; */
     --color-content: 217deg 32.6% 17.5%;
   }
 	}
