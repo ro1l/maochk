@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -21,5 +22,9 @@ export default {
       },
     },
   },
-  plugins: [],
+  // eslint-disable-next-line global-require
+  plugins: [require('daisyui')],
+  daisyui: {
+    // themes: ['light', 'dark', 'cupcake'],
+  },
 };
