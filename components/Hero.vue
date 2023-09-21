@@ -1,7 +1,7 @@
 <template>
   <!-- Hero -->
   <div
-    class="relative overflow-hidden bg-bkg"
+    class="relative overflow-hidden"
   >
     <!-- Gradients -->
     <div aria-hidden="true" class="flex absolute -top-96 left-1/2 transform -translate-x-1/2">
