@@ -1,19 +1,19 @@
 <template>
   <div
-    class="mx-auto w-[90%] lg:w-[80%] p-7 bg-white border border-gray-200 rounded-xl shadow-sm dark:bg-gray-800 dark:border-violet-700"
+    class="mx-auto w-full lg:w-[80%] p-7 rounded-xl dark:border-violet-700"
   >
     <form>
       <!-- Form Group -->
       <div class="flex flex-col lg:flex-row">
-        <div class="relative grow mb-5 lg:me-5 lg:mb-0">
+        <div class="relative grow mb-6 lg:me-5 lg:mb-0">
           <input
             id="email"
             type="email"
             name="email"
-            class="text-left w-full px-5 py-4 bg-white border border-gray-200 rounded-xl shadow-sm dark:bg-gray-800 dark:border-violet-700"
+            class="text-left w-full px-5 py-5 bg-gray-200 border shadow-sm border-gray-300 rounded-xl dark:bg-gray-800 dark:border-violet-700"
             required
             aria-describedby="email-error"
-            placeholder="請輸入編號"
+            placeholder="請輸入16碼編號"
           >
           <div class="hidden absolute inset-y-0 right-0 items-center pointer-events-none pr-3">
             <svg
@@ -33,7 +33,7 @@
           Please include a valid email address so we can get back to you
         </p>
 
-        <button class="px-5 py-4 rounded-md bg-violet-700 text-white hover:bg-violet-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-base dark:focus:ring-offset-gray-800 grow lg:grow-0">
+        <button class="px-5 py-4 rounded-xl bg-violet-600 text-white hover:bg-violet-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-base dark:focus:ring-offset-gray-800 grow lg:grow-0">
           查詢貨物進度
         </button>
       </div>

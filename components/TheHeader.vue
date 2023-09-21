@@ -25,9 +25,9 @@ watch(() => route.path, () => {
 </script>
 <template>
   <header class="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm fixed top-0 left-0">
-    <nav class="mt-6 relative max-w-7xl w-full bg-opacity-50 backdrop-blur-sm bg-white border border-gray-200 rounded-[36px] mx-3 py-3 px-4 md:flex md:items-center md:justify-between md:py-2 md:px-6 lg:px-8 xl:mx-auto dark:bg-gray-800 dark:border-gray-700 dark:bg-opacity-70 dark:backdrop-blur-sm" aria-label="Global">
-      <div class="flex items-center justify-between">
-        <NuxtLink to="/" class="flex-none w-32 dark:fill-white" aria-label="Brand">
+    <nav class="mt-6 relative max-w-7xl w-full bg-opacity-70 backdrop-blur-sm bg-white border border-gray-200 rounded-[36px] mx-3 py-3 px-4 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto dark:bg-gray-800 dark:border-gray-700 dark:bg-opacity-70 dark:backdrop-blur-sm" aria-label="Global">
+      <div class="flex items-center justify-between px-2">
+        <NuxtLink to="/" class="flex-none w-24 lg:w-32  dark:fill-white" aria-label="Brand">
           <SvgLogo />
         </NuxtLink>
         <div class="md:hidden">
@@ -52,7 +52,7 @@ watch(() => route.path, () => {
         ref="isOpen"
         class="overflow-hidden hidden transition-all duration-300 basis-full grow md:block"
       >
-        <div class="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row  md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:pl-7">
+        <div class="flex flex-col gap-y-4 gap-x-0 mt-6 mb-2 px-2 md:flex-row  md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:mb-0 md:pl-7">
           <NuxtLink
             to="/about"
             class="nav-link"
@@ -63,7 +63,7 @@ watch(() => route.path, () => {
           <a class="nav-link" href="#">聯絡我們</a>
 
           <div class="hs-dropdown [--strategy:static] md:[--strategy:fixed] [--adaptive:none] md:[--trigger:hover] md:py-4">
-            <button type="button" class="flex items-center w-full text-gray-500 hover:text-gray-400 font-medium dark:text-gray-400 dark:hover:text-gray-500 ">
+            <button type="button" class="flex items-center w-full nav-link ">
               產品服務
               <svg
                 class="ml-2 w-2.5 h-2.5 text-gray-600"
@@ -121,35 +121,4 @@ watch(() => route.path, () => {
       </div>
     </nav>
   </header>
-
-  <!-- <div class="navbar bg-base-100 border-b border-gray-700">
-    <div class="flex-1">
-      <NuxtLink to="/" class="btn btn-ghost normal-case w-32 dark:fill-white">
-        <SvgLogo />
-      </NuxtLink>
-    </div>
-    <div class="flex-none">
-      <div class="dropdown dropdown-end">
-        <label tabindex="0">
-          <button class="btn btn-square btn-ghost">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
-          </button></label>
-        <ul
-          tabindex="0"
-          class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
-        >
-          <li>
-            <NuxtLink to="/about" @click="handleClick">
-              about
-            </NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/" @click="handleClick">
-              home
-            </NuxtLink>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div> -->
 </template>
