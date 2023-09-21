@@ -6,17 +6,11 @@
   :root {
     --color-bkg: 0deg 0% 100%;
     --color-content: 217deg 32.6% 17.5%;
-		--color-text10: 220deg 8.9% 46.1%;
-		--color-text50: 215deg 13.8% 34.1%;
-		--color-text100: 215deg 27.9% 16.9%;
   }
 	@media (prefers-color-scheme:dark){
   :root {
     --color-bkg: 215deg 27.9% 16.9%;
     --color-content: 217deg 32.6% 17.5%;
-		--color-text10: 217.9deg 10.6% 64.9%;
-		--color-text50: 215deg 13.8% 34.1%;
-		--color-text100: 220deg 13% 91%;
   }
 	}
 	body {
