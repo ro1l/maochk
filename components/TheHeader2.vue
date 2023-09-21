@@ -1,8 +1,4 @@
 <script setup>
-// const handleClick = () => {
-//   const elem = document.activeElement;
-//   elem?.blur();
-// };
 
 // toggleNav
 const isOpen = ref(null);
@@ -24,8 +20,8 @@ watch(() => route.path, () => {
 
 </script>
 <template>
-  <header class="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm fixed top-0 left-0">
-    <nav class="mt-6 relative max-w-7xl w-full bg-opacity-50 backdrop-blur-sm bg-white border border-gray-200 rounded-[36px] mx-3 py-3 px-4 md:flex md:items-center md:justify-between md:py-2 md:px-6 lg:px-8 xl:mx-auto dark:bg-gray-800 dark:border-gray-700 dark:bg-opacity-70 dark:backdrop-blur-sm" aria-label="Global">
+  <header class="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm fixed top-5 left-0">
+    <nav class="mt-6 relative max-w-7xl w-full bg-opacity-50 backdrop-blur-sm bg-white border border-gray-200 rounded-[36px] mx-3 py-3 px-4 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto dark:bg-gray-800 dark:border-gray-700 dark:bg-opacity-70 dark:backdrop-blur-sm" aria-label="Global">
       <div class="flex items-center justify-between">
         <NuxtLink to="/" class="flex-none w-32 dark:fill-white" aria-label="Brand">
           <SvgLogo />
@@ -57,7 +53,7 @@ watch(() => route.path, () => {
             to="/about"
             class="nav-link"
           >
-            查詢進度
+            查詢進度22
           </NuxtLink>
           <a class="nav-link" href="#">AI聊天室</a>
           <a class="nav-link" href="#">聯絡我們</a>
@@ -121,35 +117,10 @@ watch(() => route.path, () => {
       </div>
     </nav>
   </header>
-
-  <!-- <div class="navbar bg-base-100 border-b border-gray-700">
-    <div class="flex-1">
-      <NuxtLink to="/" class="btn btn-ghost normal-case w-32 dark:fill-white">
-        <SvgLogo />
-      </NuxtLink>
-    </div>
-    <div class="flex-none">
-      <div class="dropdown dropdown-end">
-        <label tabindex="0">
-          <button class="btn btn-square btn-ghost">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
-          </button></label>
-        <ul
-          tabindex="0"
-          class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
-        >
-          <li>
-            <NuxtLink to="/about" @click="handleClick">
-              about
-            </NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/" @click="handleClick">
-              home
-            </NuxtLink>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div> -->
 </template>
+
+<style scope>
+.router-link-exact-active {
+  color: red;
+}
+</style>

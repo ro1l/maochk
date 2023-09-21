@@ -2,6 +2,8 @@
 // definePageMeta({
 //   layout: 'custom'
 // })
+
+// live chat
 onMounted(() => {
   var Tawk_API = Tawk_API || {};
   const Tawk_LoadStart = new Date();
