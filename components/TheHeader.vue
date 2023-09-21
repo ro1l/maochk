@@ -1,4 +1,11 @@
 <script setup>
+const isOpen = ref(null);
+
+function toggleNav() {
+  const element = isOpen.value.classList;
+  element.toggle('hidden');
+  element.toggle('block');
+}
 </script>
 <template>
   <header class="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm fixed top-5 left-0">
@@ -14,7 +21,7 @@
             data-hs-collapse="#navbar-collapse-with-animation"
             aria-controls="navbar-collapse-with-animation"
             aria-label="Toggle navigation"
-            @click.prevent="toggleNavbar"
+            @click="toggleNav"
           >
             <svg class="hs-collapse-open:hidden w-4 h-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
@@ -26,6 +33,7 @@
         </div>
       </div>
       <div
+        ref="isOpen"
         class="overflow-hidden hidden transition-all duration-300 basis-full grow md:block"
       >
         <div class="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row  md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:pl-7">
