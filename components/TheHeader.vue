@@ -1,4 +1,6 @@
 <script setup>
+
+// toggleNav
 const isOpen = ref(null);
 
 function toggleNav() {
@@ -6,6 +8,16 @@ function toggleNav() {
   element.toggle('hidden');
   element.toggle('block');
 }
+
+// change route close nav
+const route = useRoute();
+
+watch(() => route.path, () => {
+  const element = isOpen.value.classList;
+  element.remove('block');
+  element.add('hidden');
+});
+
 </script>
 <template>
   <header class="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm fixed top-5 left-0">
