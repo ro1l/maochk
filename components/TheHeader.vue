@@ -14,20 +14,21 @@ function toggleNav() {
 }
 
 // change route close nav
-const route = useRoute();
+// const route = useRoute();
 
-watch(() => route.path, () => {
-  const element = isOpen.value.classList;
-  element.remove('block');
-  element.add('hidden');
-});
+// watch(() => route.path, () => {
+//   const element = isOpen.value.classList;
+//   element.remove('block');
+//   element.add('hidden');
+// });
 
 </script>
+
 <template>
   <header class="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm fixed top-0 left-0">
-    <nav class="mt-6 relative max-w-7xl w-full bg-opacity-70 backdrop-blur-sm bg-white border border-gray-200 rounded-[36px] mx-3 py-3 px-4 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto dark:bg-gray-800 dark:border-gray-700 dark:bg-opacity-70 dark:backdrop-blur-sm" aria-label="Global">
+    <nav class="mt-6 relative max-w-7xl w-full bg-opacity-90 backdrop-blur-sm bg-bkg border border-gray-200 rounded-[36px] mx-3 py-3 px-4 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto dark:border-gray-700 dark:bg-opacity-70 dark:backdrop-blur-sm" aria-label="Global">
       <div class="flex items-center justify-between px-2">
-        <NuxtLink to="/" class="flex-none w-24 lg:w-32  dark:fill-white" aria-label="Brand">
+        <NuxtLink to="/" class="flex-none w-24 lg:w-32 bg-opacity-0 dark:fill-white">
           <SvgLogo />
         </NuxtLink>
         <div class="md:hidden">
@@ -54,12 +55,12 @@ watch(() => route.path, () => {
       >
         <div class="flex flex-col gap-y-4 gap-x-0 mt-6 mb-2 px-2 md:flex-row  md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:mb-0 md:pl-7">
           <NuxtLink
-            to="/about"
+            to="/track"
             class="nav-link"
           >
-            查詢進度
+            追蹤貨物
           </NuxtLink>
-          <a class="nav-link" href="#">AI聊天室</a>
+          <a class="nav-link" href="#">AI客服</a>
           <a class="nav-link" href="#">聯絡我們</a>
 
           <div class="hs-dropdown [--strategy:static] md:[--strategy:fixed] [--adaptive:none] md:[--trigger:hover] md:py-4">
@@ -122,3 +123,8 @@ watch(() => route.path, () => {
     </nav>
   </header>
 </template>
+
+<style>
+.router-link-exact-active {
+}
+</style>

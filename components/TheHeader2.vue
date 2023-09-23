@@ -118,9 +118,3 @@ watch(() => route.path, () => {
     </nav>
   </header>
 </template>
-
-<style scope>
-.router-link-exact-active {
-  color: red;
-}
-</style>

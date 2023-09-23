@@ -1,7 +1,7 @@
 <script setup>
-// definePageMeta({
-//   layout: 'custom'
-// })
+definePageMeta({
+  layout: 'index',
+});
 
 // live chat
 onMounted(() => {

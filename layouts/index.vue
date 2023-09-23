@@ -1,6 +1,6 @@
 <template>
   <TheHeader />
-  <div class="mx-8 lg:mx-0">
+  <div>
     <slot />
   </div>
   <LazyTheFooter />
