@@ -11,6 +11,20 @@ export default {
   ],
   theme: {
     extend: {
+      animation: {
+        pop: 'pop 2s ease-out',
+      },
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
+        },
+        pop: {
+          '0%': { transform: 'scale(0.98)' },
+          '40%': { transform: 'scale(1.02)' },
+          '100%': { transform: 'scale(1)' },
+        },
+      },
       colors: {
         // text: {
         //   10: 'hsl(var(--color-text10) / <alpha-value>)',
