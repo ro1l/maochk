@@ -17,6 +17,8 @@ module.exports = {
   rules: {
     'no-undef': 'off',
     'vue/multi-word-component-names': 'off',
-    'max-len': 'off', // disables line length check
+    'max-len': 'off', // disables line length check,
+    'vue/no-multiple-template-root': 0, // The template root requires an element rather than texts.
+    'import/prefer-default-export': 'off',
   },
 };
