@@ -25,4 +25,5 @@
   .router-link-exact-active {
     @apply text-violet-500  dark:bg-gray-900 dark:text-white
   }
+
 }

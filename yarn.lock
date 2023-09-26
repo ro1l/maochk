@@ -899,7 +899,7 @@
     which "^3.0.1"
     ws "^8.13.0"
 
-"@nuxt/kit@3.7.3", "@nuxt/kit@^3.5.0", "@nuxt/kit@^3.7.1", "@nuxt/kit@^3.7.3":
+"@nuxt/kit@3.7.3", "@nuxt/kit@^3.5.0", "@nuxt/kit@^3.6.5", "@nuxt/kit@^3.7.1", "@nuxt/kit@^3.7.3":
   version "3.7.3"
   resolved "https://registry.npmjs.org/@nuxt/kit/-/kit-3.7.3.tgz"
   integrity sha512-bhP02i6CNti15Z4ix3LpR3fd1ANtTcpfS3CDSaCja24hDt3UxIasyp52mqD9LRC+OxrUVHJziB18EwUtS6RLDQ==
@@ -1116,6 +1116,11 @@
     "@parcel/watcher-win32-arm64" "2.3.0"
     "@parcel/watcher-win32-ia32" "2.3.0"
     "@parcel/watcher-win32-x64" "2.3.0"
+
+"@phosphor-icons/vue@^2.1.6":
+  version "2.1.6"
+  resolved "https://registry.yarnpkg.com/@phosphor-icons/vue/-/vue-2.1.6.tgz#90c999d54ffe2fcb0ea683120b49269739c9decc"
+  integrity sha512-j4iVvNT4JbDR2udIVfakKZHd14i3jCvO4b24OC0W/1rasftU8qVg1Tnb3QDwAT0teNU+UxvaM+kCWxfGHC2dUg==
 
 "@pinia/nuxt@^0.4.11":
   version "0.4.11"
@@ -5071,6 +5076,14 @@ nuxi@^3.8.3:
   optionalDependencies:
     fsevents "~2.3.3"
 
+nuxt-phosphor-icons@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/nuxt-phosphor-icons/-/nuxt-phosphor-icons-1.0.7.tgz#621857c91263a47afcbc91d56e675925368d7d4f"
+  integrity sha512-qiaaNy1WaunSGmhhO4slnzJ8IXUSLhqA3pM+IINXnDYQ8XgVtX+53eHRejqWWV5mMzVWNEw22HlGXikMXWllXA==
+  dependencies:
+    "@nuxt/kit" "^3.6.5"
+    "@phosphor-icons/vue" "^2.1.6"
+
 nuxt@^3.7.3:
   version "3.7.3"
   resolved "https://registry.npmjs.org/nuxt/-/nuxt-3.7.3.tgz"
@@ -7286,6 +7299,7 @@ widest-line@^4.0.1:
     string-width "^5.0.1"
 
 "wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
+  name wrap-ansi-cjs
   version "7.0.0"
   resolved "https://registry.npmjs.org/wrap-ansi/-/wrap-ansi-7.0.0.tgz"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
