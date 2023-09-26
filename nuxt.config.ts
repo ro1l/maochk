@@ -6,9 +6,16 @@ export default defineNuxtConfig({
       '@pinia/nuxt',
       { autoImports: ['defineStore', 'acceptHMRUpdate'] },
     ],
+    'nuxt-phosphor-icons',
   ],
+  phosphor: {
+    prefix: 'Icon',
+  },
   imports: {
     dirs: ['./stores'],
+  },
+  pinia: {
+    autoImports: ['defineStore', 'acceptHMRUpdate'],
   },
   postcss: {
     plugins: {
@@ -20,7 +27,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       bodyAttrs: {
-        class: ['mt-32', 'lg:mt-36'],
+        class: [''],
       },
       title: 'Mao Chk',
       htmlAttrs: {
