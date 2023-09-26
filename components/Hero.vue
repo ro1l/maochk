@@ -4,7 +4,7 @@
     bg-gradient-to-b dark:from-violet-600/[.15] via-transparent"
   >
     <div
-      class="w-full px-8 z-10 -mt-32 pt-32 lg:-mt-36 lg:pt-36 max-w-[85rem] lg:mx-auto lg:px-8 py-1 lg:py-16max-w-2xl text-center"
+      class="w-full px-8 z-10 pt-32  lg:pt-36 max-w-[85rem] lg:mx-auto lg:px-8 py-1 lg:py-16max-w-2xl text-center"
     >
       <p
         class="inline-block text-sm font-medium bg-clip-text bg-gradient-to-l
@@ -30,7 +30,7 @@
     </div>
 
     <div class="p-8 lg:px-40">
-      <trackComponent />
+      <TrackComponent />
     </div>
   </div>
 </template>
