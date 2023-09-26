@@ -1,12 +1,23 @@
 <script setup>
+const store = useTodosStore();
+
+const id = ref(null);
+
+onUpdated(() => {
+  store.todo = id;
+  console.log('🚀 ~ file: searchBar.vue:8 ~ onUpdated ~ store.todo:', store.todo);
+});
+
 </script>
 <template>
-  <div class="relative grow my-3 lg:me-5 lg:mb-0">
+  <div class="relative grow mb-4 lg:me-5 lg:mb-0">
+    {{ id }}
     <input
       id="number"
+      v-model="id"
       type="number"
       name="number"
-      class="text-left w-full px-5 py-5 shadow-sm bg-gray-200
+      class="text-left relative w-full px-5 py-5 bg-gray-200
         border border-gray-300 rounded-xl
       dark:bg-gray-800 dark:border-violet-700
       focus:outline-violet-700"
@@ -14,21 +25,5 @@
       aria-describedby="email-error"
       placeholder="請輸入追蹤編號"
     >
-    <div class="hidden absolute inset-y-0 right-0 items-center pointer-events-none pr-3">
-      <svg
-        class="h-5 w-5 text-red-500"
-        width="16"
-        height="16"
-        fill="currentColor"
-        viewBox="0 0 16 16"
-        aria-hidden="true"
-      >
-        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
-      </svg>
-    </div>
   </div>
-
-  <p id="email-error" class="hidden text-xs text-red-600 mt-2">
-    Please include a valid email address so we can get back to you
-  </p>
 </template>
