@@ -4,6 +4,7 @@ import { SearchBar } from '#build/components';
 <template>
   <form class="lg:flex">
     <TrackComponentSearchBar />
+    <slot />
     <TrackComponentSearchBtn />
   </form>
 </template>
